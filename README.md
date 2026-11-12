@@ -32,10 +32,10 @@ python ContinuousPaste.py
 5. 点“开始粘贴”，切到目标输入框；点“停止粘贴”结束
 
 ## Platform notes
-- Windows：普通窗口直接跑；若目标窗口是管理员权限（如任务管理器），用管理员 CMD/IDE 启动本工具。pyautogui 模拟输入可能受 UAC 与目标权限影响。[2,12](@ref)
-- macOS：系统设置→隐私与安全性→辅助功能，授权运行脚本的 Python/终端/IDE；截图类才需要屏幕录制，本工具纯粘贴主要开辅助功能。pyautogui 在 macOS 通常还需 PyObjC。[10](@ref)
-- Linux：X11 下较稳，需 python3-tk；Wayland 下鼠标/键盘注入可能受限，建议切 X11。scrot/xlib 按需补：sudo apt install python3-tk scrot python3-xlib。[10](@ref)
-- 中文/非ASCII文本：本工具走剪贴板+粘贴热键，不依赖 typewrite，避免输入法问题。[2](@ref)
+- Windows：普通窗口直接跑；若目标窗口是管理员权限（如任务管理器），用管理员 CMD/IDE 启动本工具。pyautogui 模拟输入可能受 UAC 与目标权限影响。
+- macOS：系统设置→隐私与安全性→辅助功能，授权运行脚本的 Python/终端/IDE；截图类才需要屏幕录制，本工具纯粘贴主要开辅助功能。pyautogui 在 macOS 通常还需 PyObjC。
+- Linux：X11 下较稳，需 python3-tk；Wayland 下鼠标/键盘注入可能受限，建议切 X11。scrot/xlib 按需补：sudo apt install python3-tk scrot python3-xlib。
+- 中文/非ASCII文本：本工具走剪贴板+粘贴热键，不依赖 typewrite，避免输入法问题。
 - 安全：pyautogui 可设 FAILSAFE；本工具虽未强制开启，跑自动粘贴时人不要离开，失控可手动关程序。
 
 ## Use cases
